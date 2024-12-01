@@ -32,8 +32,7 @@ from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 from config import config
  
-MONGO_URI = "mongodb+srv://shilpishuklajp:0Q8oKpebO3TNBuwf@cluster0.118s8.mongodb.net/"  # Replace with your actual MongoDB URI
- 
+
 try:
     client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)  # Set a timeout for connection
     # Check if the server is available
